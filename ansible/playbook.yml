@@ -1,1 +1,15 @@
+GNU nano 7.2                                   play.yaml
+---
+- name: Installing Java and Jenkins inside the machine where ansible is installed
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Run master.sh script to install Java and Jenkins
+      script: master.sh
 
+- name: Installing Java and Docker on slave machines
+  hosts: slaves
+  become: true
+  tasks:
+    - name: Run slave.sh script to install Java and Docker
+      script: slave.sh
