@@ -1,44 +1,51 @@
+# 🚀 DevOps Lifecycle Automation – Abode Software
 
-## Prerequisites
-- Jenkins server with necessary plugins (Git, Docker, Pipeline)
-- Docker installed on build nodes
-- Access to GitHub repository: https://github.com/hshar/website.git
-- Configuration management tool (Ansible/Chef/Puppet) for initial setup
+## 📌 Project Overview
+This project simulates working as a **Sr. DevOps Engineer at Abode Software**, where the task was to implement a complete **DevOps lifecycle** for their product [hshar/website](https://github.com/hshar/website).  
+The solution includes **Git branching, Jenkins pipeline automation, Docker containerization, and AWS CodeBuild integration**.  
 
-## DevOps Lifecycle Implementation
+---
 
-### 1. Infrastructure Setup
-Infrastructure provisioning and software installation are automated using a configuration management tool. Required software includes:
-- Git
-- Docker
-- Jenkins and plugins
-- Testing frameworks
+## 🛠️ Tools & Technologies
+- **Version Control:** Git, GitHub  
+- **CI/CD:** Jenkins, AWS CodeBuild  
+- **Containerization:** Docker  
+- **Cloud Services:** AWS EC2, VPC  
+- **Configuration Management:** Ansible (for environment setup)  
 
-### 2. Git Workflow
-We follow a feature branch workflow:
-- `develop` branch for integration and testing
-- `master` branch for production-ready code
-- Feature branches are created from `develop` and merged via pull requests
+---
 
-### 3. Automated Build Pipeline (Jenkins)
+## ⚙️ Architecture
+![Architecture Diagram](screenshots/architecture.png)  
+*(Replace with your Abode Software DevOps architecture diagram)*  
 
-#### Pipeline Jobs:
-- **Job1: Build**
-  - Triggers on push to `develop` or `master`
-  - Containerizes application using Dockerfile
-  - Builds Docker image from base: `hshar/webapp`
-  - Places code in `/var/www/html` inside container
+---
 
-- **Job2: Test**
-  - Runs automated tests
-  - Executes on both `develop` and `master` branches
+## 🚀 Implementation Steps
+1. **Configuration Management**
+   - Installed necessary software on servers using **Ansible**.  
+   - Ensured all worker nodes had required tools (Jenkins, Java, Docker).  
 
-- **Job3: Prod**
-  - Deploys to production **only** when triggered from `master` branch
-  - `develop` branch only runs tests without deployment
+2. **Git Workflow**
+   - Configured **branching strategy**:  
+     - `master` branch → Build → Test → Deploy to **Production**  
+     - `develop` branch → Build → Test only (no deployment)  
 
-### 4. Docker Configuration
-The application is containerized using the provided Dockerfile:
-```dockerfile
-FROM hshar/webapp
-COPY . /var/www/html
+3. **CodeBuild Integration**
+   - Configured **AWS CodeBuild** to trigger automatically on commits.  
+   - Ensured builds run for both `master` and `develop` branches.  
+
+4. **Dockerization**
+   - Used base image `hshar/webapp` and created a **custom Dockerfile**.  
+   - Built Docker images on every GitHub push.  
+   - Deployed the app under `/var/www/html`.  
+
+5. **Jenkins Pipeline**
+   - Created a **multi-stage Jenkinsfile** with jobs:  
+     - **Job1 – Build**: Build the application.  
+     - **Job2 – Test**: Run application tests.  
+     - **Job3 – Prod**: Deploy containerized code to production.  
+
+---
+
+## 📂 Repository Structure
