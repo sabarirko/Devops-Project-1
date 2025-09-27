@@ -45,7 +45,3 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
      - **Job1 – Build**: Build the application.  
      - **Job2 – Test**: Run application tests.  
      - **Job3 – Prod**: Deploy containerized code to production.  
-
----
-
-## 📂 Repository Structure
