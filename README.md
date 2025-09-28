@@ -38,10 +38,18 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 4. **Dockerization**
    - Used base image `hshar/webapp` and created a **custom Dockerfile**.  
    - Built Docker images on every GitHub push.  
-   - Deployed the app under `/var/www/html`.  
+   - Deployed the app under `/var/www/html`.
 
 5. **Jenkins Pipeline**
    - Created a **multi-stage Jenkinsfile** with jobs:  
      - **Job1 – Build**: Build the application.  
      - **Job2 – Test**: Run application tests.  
      - **Job3 – Prod**: Deploy containerized code to production.  
+
+---
+
+## ✅ Outcomes
+- Implemented a **branch-based CI/CD strategy** with Jenkins.  
+- Automated **build, test, and production deployment** pipelines.  
+- Containerized the application with **Docker** for consistency.  
+- Ensured **faster and reliable releases** using Git workflow automation.
