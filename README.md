@@ -16,7 +16,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 ---
 
 ## ⚙️ Architecture
-![Architecture Diagram](screenshots/abode_devops_lifecycle.png)   
+![Architecture Diagram](screenshots/abode_devops_lifecycle_1png)   
 
 ---
 
@@ -31,7 +31,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
      - `develop` branch → Build → Test only (no deployment)  
 
 3. **CodeBuild Integration**
-   - Configured **AWS CodeBuild** to trigger automatically on commits.  
+   - Configured **jenkins** to trigger automatically on commits.  
    - Ensured builds run for both `master` and `develop` branches.  
 
 4. **Dockerization**
