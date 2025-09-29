@@ -16,7 +16,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 ---
 
 ## ⚙️ Architecture
-![Architecture Diagram](screenshots/abode_devops_lifecycle_1png)   
+![Architecture Diagram](screenshots/abode_devops_lifecycle_1.png)   
 
 ---
 
