@@ -1,7 +1,7 @@
 # 🚀 DevOps Lifecycle Automation – Abode Software
 
 ## 📌 Project Overview
-This project simulates working as a **Sr. DevOps Engineer at Abode Software**, where the task was to implement a complete **DevOps lifecycle** for their product [hshar/website](https://github.com/hshar/website).  
+This project simulates working as a **Sr. DevOps Engineer at Adobe Software**, where the task was to implement a complete **DevOps lifecycle** for their product [hshar/website](https://github.com/hshar/website).  
 The solution includes **Git branching, Jenkins pipeline automation, Docker containerization, and AWS CodeBuild integration**.  
 
 ---
@@ -16,8 +16,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 ---
 
 ## ⚙️ Architecture
-![Architecture Diagram](screenshots/abode_devops_lifecycle.png)  
-*(Replace with your Abode Software DevOps architecture diagram)*  
+![Architecture Diagram](screenshots/abode_devops_lifecycle.png)   
 
 ---
 
