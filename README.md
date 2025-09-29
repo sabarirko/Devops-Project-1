@@ -8,7 +8,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 
 ## 🛠️ Tools & Technologies
 - **Version Control:** Git, GitHub  
-- **CI/CD:** Jenkins, AWS CodeBuild  
+- **CI/CD:** Jenkins
 - **Containerization:** Docker  
 - **Cloud Services:** AWS EC2, VPC  
 - **Configuration Management:** Ansible (for environment setup)  
@@ -16,7 +16,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 ---
 
 ## ⚙️ Architecture
-![Architecture Diagram](screenshots/architecture.png)  
+![Architecture Diagram](screenshots/adobe_software_devops_lifecycle.png)  
 *(Replace with your Abode Software DevOps architecture diagram)*  
 
 ---
