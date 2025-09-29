@@ -16,7 +16,7 @@ The solution includes **Git branching, Jenkins pipeline automation, Docker conta
 ---
 
 ## ⚙️ Architecture
-![Architecture Diagram](screenshots/adobe_software_devops_lifecycle.png)  
+![Architecture Diagram](screenshots/adobe_devops_lifecycle.png)  
 *(Replace with your Abode Software DevOps architecture diagram)*  
 
 ---
