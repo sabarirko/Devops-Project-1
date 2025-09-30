@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 This project simulates working as a **Sr. DevOps Engineer at Adobe Software**, where the task was to implement a complete **DevOps lifecycle** for their product [hshar/website](https://github.com/hshar/website).  
-The solution includes **Git branching, Jenkins pipeline automation, Docker containerization, and AWS CodeBuild integration**.  
+The solution includes **Git branching, Jenkins pipeline automation, Docker containerization**.  
 
 ---
 
